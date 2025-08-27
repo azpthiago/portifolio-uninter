@@ -1,51 +1,12 @@
-/* Carreira card estilo zenorocha */
-.carreira-card {
-    padding-bottom: 1.5rem;
-}
-.carreira-title {
-    font-size: 1.3rem;
-    font-weight: 600;
-    color: var(--primary);
-    margin-bottom: 1.1rem;
-}
-.carreira-item {
-    margin-bottom: 2.1rem;
-}
-.carreira-cargo {
-    font-size: 1.15rem;
-    font-weight: 600;
-    color: var(--fg);
-    margin-bottom: 0.2rem;
-}
-.carreira-empresa-local {
-    font-size: 1rem;
-    color: var(--fg);
-    margin-bottom: 0.2rem;
-}
-.carreira-empresa {
-    font-weight: 500;
-    color: var(--primary);
-    text-decoration: underline;
-    cursor: pointer;
-    a {
-        color: inherit;
-    }
-}
-.carreira-local {
-    color: var(--muted);
-    font-weight: 400;
-    margin-left: 0.3rem;
-}
-.carreira-periodo {
-    font-size: 0.98rem;
-    color: var(--muted);
-    margin-bottom: 0.2rem;
-}
-.carreira-duracao {
-    color: var(--muted);
-    font-size: 0.98rem;
-    margin-left: 0.3rem;
-}
+/*
+    style.css
+    Estilos customizados para o portfólio pessoal.
+    Responsável por layout, cores, responsividade e componentes visuais.
+
+    Todos os direitos reservados a Thiago Vinicius Silva Paz
+*/
+
+/* Reset e variáveis globais */
 html {
     box-sizing: border-box;
     font-size: 18px;
@@ -57,6 +18,7 @@ html {
     box-sizing: inherit;
 }
 
+/* Paleta de cores e variáveis CSS */
 :root {
     --bg: #18181b;
     --fg: #fff;
@@ -67,6 +29,7 @@ html {
     --radius: 18px;
 }
 
+/* Reset de margens, paddings e fonte base */
 * {
     margin: 0;
     padding: 0;
@@ -77,6 +40,7 @@ html {
 /* =========================
   ESTILO DO BODY
   ========================= */
+/* Estilo geral do body */
 body {
     background: var(--bg);
     color: var(--fg);
@@ -89,6 +53,7 @@ body {
   HEADER E NAVBAR
   ========================= */
 
+/* Navbar fixa no topo, com sombra e responsiva */
 nav.navbar {
     position: fixed;
     top: 0;
@@ -152,6 +117,7 @@ nav.navbar > .nav-links {
   CONTEÚDO PRINCIPAL
   ========================= */
 
+/* Container principal para centralizar conteúdo */
 .container {
     max-width: 80vw;
     margin: 0 auto;
@@ -162,6 +128,7 @@ nav.navbar > .nav-links {
   INTRODUÇÃO
   ========================= */
 
+/* Seção de apresentação (hero) */
 .hero {
     display: flex;
     flex-direction: column;
@@ -217,6 +184,7 @@ nav.navbar > .nav-links {
   SEÇÕES GERAIS
   ========================= */
 
+/* Cartão base para seções (Sobre, Formação, Carreira, Projetos, Contato) */
 .card {
     background: var(--card-bg);
     border: 1.5px solid var(--border);
@@ -251,6 +219,7 @@ nav.navbar > .nav-links {
   PROJETOS
   ========================= */
 
+/* Lista de projetos */
 .projects {
     display: flex;
     flex-direction: column;
@@ -258,6 +227,7 @@ nav.navbar > .nav-links {
     margin-top: 0.5rem;
 }
 
+/* Card individual de projeto */
 .project-card {
     display: flex;
     flex-direction: column;
@@ -293,6 +263,7 @@ nav.navbar > .nav-links {
   FORMULÁRIO DE CONTATO
   ========================= */
 
+/* Formulário de contato */
 .form {
     display: flex;
     flex-direction: column;
@@ -327,6 +298,7 @@ nav.navbar > .nav-links {
     border-color: var(--primary);
 }
 
+/* Botão principal */
 .button {
     background: var(--primary);
     color: #18181b;
@@ -353,6 +325,7 @@ nav.navbar > .nav-links {
   FOOTER (RODAPÉ)
   ========================= */
 
+/* Rodapé */
 footer {
     text-align: center;
     color: var(--muted);
@@ -365,6 +338,7 @@ footer {
 /* =========================
   RESPONSIVIDADE (TELAS PEQUENAS)
   ========================= */
+/* Responsividade para telas pequenas */
 @media (max-width: 600px) {
     nav.navbar {
         flex-direction: column;
@@ -386,6 +360,7 @@ footer {
     }
 }
 
+/* Destaque para trechos de texto */
 #unmuted-text {
     color: var(--fg);
 }
@@ -404,6 +379,7 @@ footer {
 }
 
 /* Toast de sucesso */
+/* Toast de sucesso (mensagem flutuante) */
 .toast-success {
     display: none;
     position: fixed;
@@ -423,6 +399,7 @@ footer {
 }
 
 /* Sucesso do formulário (mensagem abaixo do botão) */
+/* Mensagem de sucesso do formulário (abaixo do botão) */
 .form-success {
     display: none;
     color: var(--primary);
@@ -432,6 +409,7 @@ footer {
 }
 
 /* Info do Formspree */
+/* Informações sobre o uso do Formspree */
 .formspree-info {
     color: var(--muted);
     font-size: 0.95rem;
@@ -440,4 +418,53 @@ footer {
 .formspree-link {
     color: var(--primary);
     text-decoration: underline;
+}
+
+/* Carreira card estilo */
+.carreira-card {
+    padding-bottom: 1.5rem;
+}
+.carreira-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--primary);
+    margin-bottom: 1.1rem;
+}
+.carreira-item {
+    margin-bottom: 2.1rem;
+}
+.carreira-cargo {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--fg);
+    margin-bottom: 0.2rem;
+}
+.carreira-empresa-local {
+    font-size: 1rem;
+    color: var(--fg);
+    margin-bottom: 0.2rem;
+}
+.carreira-empresa {
+    font-weight: 500;
+    color: var(--primary);
+    text-decoration: underline;
+    cursor: pointer;
+    a {
+        color: inherit;
+    }
+}
+.carreira-local {
+    color: var(--muted);
+    font-weight: 400;
+    margin-left: 0.3rem;
+}
+.carreira-período {
+    font-size: 0.98rem;
+    color: var(--muted);
+    margin-bottom: 0.2rem;
+}
+.carreira-duração {
+    color: var(--muted);
+    font-size: 0.98rem;
+    margin-left: 0.3rem;
 }

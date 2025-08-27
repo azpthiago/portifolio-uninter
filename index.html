@@ -1,3 +1,11 @@
+<!--
+  index.html
+  Portfólio pessoal desenvolvido para a disciplina de Aplicação Web e Móveis (UNINTER).
+  Estrutura principal da página, com navegação, seções de apresentação, carreira, projetos e contato.
+  Todos os estilos e scripts são customizados.
+
+  Todos os direitos reservados a Thiago Vinicius Silva Paz
+-->
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -12,6 +20,7 @@
 </head>
 
 <body>
+  <!-- Navbar fixa com links para navegação entre seções -->
   <nav class="navbar">
     <a href="#intro" class="nav-logo">Thiago Paz</a>
     <div class="nav-links">
@@ -23,7 +32,9 @@
     </div>
   </nav>
 
+  <!-- Conteúdo principal do portfólio -->
   <main class="container" id="intro">
+    <!-- Seção de apresentação (hero) com foto, nome, título e redes sociais -->
     <section class="hero">
       <img src="img/photo.jpg" alt="Foto de Thiago Paz" class="hero-avatar" />
       <h1 class="hero-title">Thiago Paz</h1>
@@ -36,6 +47,7 @@
       </div>
     </section>
 
+    <!-- Seção Sobre mim -->
     <section id="quem-sou-eu" class="card">
       <h3>Sobre mim</h3>
       <p><span id="unmuted-text">Olá, sou Thiago Paz,</span> desenvolvedor back-end apaixonado por tecnologia, formado
@@ -46,6 +58,7 @@
       <p>Já atuei como monitor de Lógica de Programação e ministrei palestras sobre tecnologia e acessibilidade.</p>
     </section>
 
+    <!-- Seção Formação acadêmica -->
     <section id="formacao" class="card">
       <h3>Formação</h3>
       <ul>
@@ -55,6 +68,7 @@
       </ul>
     </section>
 
+    <!-- Seção Carreira profissional, com cargos e experiências -->
     <section id="carreira" class="card carreira-card">
       <h3 class="carreira-title">Carreira</h3>
       <div class="carreira-item">
@@ -83,6 +97,7 @@
       </div>
     </section>
 
+    <!-- Seção Projetos pessoais, com links para repositórios -->
     <section id="projects" class="card">
       <h3>Projetos</h3>
       <div class="projects">
@@ -101,8 +116,10 @@
       </div>
     </section>
 
+    <!-- Seção de contato, com formulário integrado ao Formspree -->
     <section id="contato" class="card">
       <h3>Contato</h3>
+      <!-- Formulário de contato: nome, meio de contato, mensagem -->
       <form class="form" id="contato-form">
         <input type="text" id="nome" name="nome" placeholder="Seu nome" required />
         <select id="meio-contato" name="meio-contato" required>
@@ -114,12 +131,14 @@
         <textarea id="mensagem" name="mensagem" rows="4" placeholder="Sua mensagem" required></textarea>
         <button type="submit" class="button">Enviar</button>
       </form>
+      <!-- Mensagens de sucesso (inline e toast) -->
       <div id="form-success" class="form-success">Mensagem enviada com sucesso!</div>
       <div id="toast-success" class="toast-success">Mensagem enviada com sucesso!</div>
       <p class="formspree-info">O envio é feito via <a href='https://formspree.io' target='_blank'
           class="formspree-link">Formspree</a>.</p>
     </section>
 
+    <!-- Rodapé -->
     <footer>
       <span>© 2025 Thiago Paz</span>
     </footer>
