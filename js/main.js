@@ -2,7 +2,7 @@
       main.js
       Script principal para interatividade do portfólio.
       Responsável pelo envio do formulário de contato via AJAX (Formspree),
-      exibição de mensagens de sucesso e rolagem suave ao topo.
+      exibição de mensagens de sucesso, rolagem suave ao topo e medidas anti-spam.
     */
 
     // Aguarda o carregamento do DOM para iniciar os scripts
@@ -11,10 +11,25 @@
       const form = document.getElementById('contato-form');
       const successMsg = document.getElementById('form-success');
       const toast = document.getElementById('toast-success');
+      let lastSubmit = 0;
 
       // Evento de submit do formulário de contato
       form.addEventListener('submit', async function (e) {
         e.preventDefault();
+
+        // Honeypot: se preenchido, bloqueia envio
+        if (form.website && form.website.value) {
+          return;
+        }
+
+        // Throttle: bloqueia múltiplos envios em menos de 10s
+        const now = Date.now();
+        if (now - lastSubmit < 10000) {
+          alert('Aguarde alguns segundos antes de enviar novamente.');
+          return;
+        }
+        lastSubmit = now;
+
         const data = new FormData(form);
         const action = 'https://formspree.io/f/mjkekkrk'; // Endpoint do Formspree
         try {
