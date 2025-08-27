@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thiago Paz</title>
+  <!-- Importa o arquivo CSS principal -->
+  <link rel="stylesheet" href="./style/style.css" />
+  <!-- Fonte Poppins do Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <!-- Barra de navegação principal -->
+    <nav class="navbar">
+      <ul>
+        <li><a href="#intro">Inicio</a></li>
+        <li><a href="#quem-sou-eu">Quem sou eu</a></li>
+        <li><a href="#formacao">Formação profissional</a></li>
+        <li><a href="#projects">Meus projetos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="content">
+    <section id="intro" class="intro">
+      <div class="intro-content">
+        <img src="img/photo.jpg" alt="Foto de Tiago Palmeira" class="profile-pic" />
+        <div class="intro-text">
+          <h1>Thiago Paz</h1>
+          <h2>Desenvolvedor Back-end Junior</h2>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção "Quem sou eu" -->
+    <section id="quem-sou-eu" class="section">
+      <h3>Quem sou eu?</h3>
+      <p>
+        Olá, sou Thiago Paz, formado no curso tecnico de Desenvolvimento de Sistemas pelo SENAI Alagoinhas, atuo como
+        desenvolvedor no SENAI CIMATEC, onde
+        desenvolvo soluções web utilizando tecnologias de ponta, inteligência artificial e devops para big techs
+        nacionais e
+        internacionais.
+      </p><br>
+      <p>
+        Dentro do desenvolvimento web possuo experiencia no ecossistema Node (Java Script e Type Script) e Java (Spring
+        Framework), tendo desenvolvido diversos projetos dentro das duas linguagens.
+      </p><br>
+      <p>
+        Atuei como monitor durante 2 semestres na matéria de Lógica de programação, além de monitoria focada em
+        acessibilidade dentro do curso de informática básica. Em conjunto a isto palestrei em eventos no SENAI
+        Alagoinhas e outras empresas da região.
+      </p>
+    </section>
+
+    <!-- Seção de formação profissional -->
+    <section class="section" id="formacao">
+      <h3>Formação profissional</h3>
+      <p>
+        Sou formado em Desenvolvimento de Sistemas pelo SENAI Alagoinhas, uma instituição com grande renome na formação
+        de profissionais em diversas áreas técnicas.
+      </p><br>
+
+      <p>
+        Possuo formação em desenvolvimento back-end Java no projeto Oracle Next Education, em parceria com a Alura, onde
+        desenvolvi diversos projetos utilizando a linguagem Java em conjunto com o FrameWork Spring praticando diversos
+        conceitos, do básico ao avançado da linguagem.
+      </p><br>
+
+
+      <p>
+        Atualmente, curso Bacharel em Engenharia de software pela UNINTER, iniciado no período do 2025.1 e com previsão
+        de finalização em 2029.2.
+      </p>
+    </section>
+
+    <!-- Seção de projetos -->
+    <section id="projects" class="section">
+      <h3>Meus projetos:</h3>
+      <p>
+        Confira abaixo alguns dos projetos que dediquei meu tempo livre para estudar e aprender sobre as tecnologias
+        mencionadas.
+      </p>
+
+      <div class="projects">
+        <!-- Projeto Ovo Perfeito -->
+        <a href="https://github.com/azpthiago/cartao-cli" class="project-card">
+          <h4>Cartão CLi</h4>
+          <p>Projeto em NodeJS para desenvolvimento de um cartão de visitas através de CLI</p>
+        </a>
+
+        <!-- Projeto MamoothDown -->
+        <a href="hhttps://github.com/azpthiago/forumhub" class="project-card">
+          <h4>ForumHUB</h4>
+          <p>API Restful em Java para criação de um forum</p>
+        </a>
+
+        <!-- Projeto Leitor de Códigos -->
+        <a href=https://github.com/azpthiago/gamepillarsofcreation class="project-card">
+          <h4>Pillars Of Creation</h4>
+          <p>Game desenvolvido utilizando C para a disciplina de Logica de Programação no curso de Desenvolvimento de
+            Sistemas no SENAI-BA.</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- Seção de contato -->
+    <section id="contato" class="section">
+      <h3>Se interessou pelo meu trabalho? Fale comigo!</h3>
+      <form class="form">
+        <label for="nome">Como posso te chamar?</label>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome." />
+
+        <label for="meio">Qual o melhor meio de comunicação para você?</label>
+        <select id="meio-contato" name="meio-contato">
+          <option value="whatsapp">WhatsApp</option>
+          <option value="email">E-mail</option>
+          <option value="telefone">Ligação</option>
+        </select>
+
+        <label for="contato" id="label-contato">Insira seu contato</label>
+        <input type="text" id="contato" name="contato" placeholder="" />
+
+        <label for="mensagem">Sua mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="5"
+          placeholder="Digite o que deseja e em breve entraremos em contato."></textarea>
+
+        <button type="submit" class="button">Enviar</button>
+      </form>
+    </section>
+
+    <!-- Seção de redes sociais -->
+    <section class="section">
+      <h3>Me siga nas minhas redes:</h3>
+      <a class="linkedin" href="https://www.linkedin.com/in/thiagopazba/" target="_blank" aria-label="LinkedIn">
+        <img src="https://img.icons8.com/?size=100&id=447&format=png&color=ffffff" alt="link para o linkedin" />
+      </a>
+      <a class="linkedin" href="https://github.com/azpthiago" target="_blank" aria-label="GitHub">
+        <img src="https://img.icons8.com/?size=100&id=62856&format=png&color=ffffff" alt="link para o github" />
+      </a>
+    </section>
+
+    <br />
+
+    <!-- Rodapé -->
+    <footer>
+      <section>
+        Todos os direitos reservados - Thiago Vinicius Silva Paz
+      </section>
+    </footer>
+  </main>
+
+  <!-- Script principal JS -->
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
