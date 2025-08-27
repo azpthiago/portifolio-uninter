@@ -59,3 +59,20 @@
         }
       });
     });
+
+// Scroll suave para navegação na navbar
+document.addEventListener('DOMContentLoaded', function () {
+  const navbarLinks = document.querySelectorAll('.nav-links a, .nav-logo');
+  navbarLinks.forEach(link => {
+    link.addEventListener('click', function (e) {
+      const href = this.getAttribute('href');
+      if (href && href.startsWith('#')) {
+        const target = document.querySelector(href);
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }
+    });
+  });
+});
