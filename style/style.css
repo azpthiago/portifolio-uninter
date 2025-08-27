@@ -1,22 +1,3 @@
-/* Ajuste específico para a última seção para evitar sobreposição da navbar */
-#contato.section-full {
-    padding-top: 100px;
-}
-@media (max-width: 600px) {
-    #contato.section-full {
-        padding-top: 120px;
-    }
-}
-/* Seção ocupa a tela inteira, centralizando o card */
-.section-full {
-    min-height: calc(100vh - 80px);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    padding-top: 80px;
-    box-sizing: border-box;
-}
 /*
     style.css
     Estilos customizados para o portfólio pessoal.
@@ -476,4 +457,23 @@ footer {
     .project-card {
         padding: 0.8rem 0.7rem;
     }
+}
+
+#contato.section-full {
+    padding-top: 100px;
+}
+@media (max-width: 600px) {
+    #contato.section-full {
+        padding-top: 120px;
+    }
+}
+/* Seção ocupa a tela inteira, centralizando o card */
+.section-full {
+    min-height: calc(100vh - 80px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-top: 80px;
+    box-sizing: border-box;
 }
